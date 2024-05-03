@@ -3,8 +3,8 @@ bl_info = {
     "category": "Animation",   
     "author": "Splits",
     "blender": (2, 80, 0),
-    "version": (0, 0, 1),
-    "description": "Adds the timeline's frame-start-end(+preview) sliders, auto-key toggle, and a neat FPS slider to the dopesheet.",
+    "version": (0, 0, 2),
+    "description": "Adds the timeline's current frame, frame-start-end(+preview) sliders, auto-key toggle, and a neat FPS slider to the dopesheet.",
     "tracker_url": "https://github.com/Splits285/TimelineButtonsInDopesheet",
 }
 
@@ -19,7 +19,11 @@ class CUSTOM_PT_slider_panel(bpy.types.Panel):
 
     def draw(self, context):
         layout = self.layout
-       ##Auto keying toggle radio button, somehow toggles its icon to filled on its own
+       ##Current frame slider
+        row = layout.row()
+        row.ui_units_x = 2.9
+        row.prop(context.scene, "frame_current", text="Current Frame")
+        ##Auto keying toggle radio button, somehow toggles its icon to filled on its own
         row = layout.row()
         row.prop(context.scene.tool_settings, "use_keyframe_insert_auto", icon='RADIOBUT_OFF', icon_only=True)
        ##Preview range toggle button
