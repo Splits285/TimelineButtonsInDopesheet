@@ -8,7 +8,7 @@ tagline = "Addon for blender which adds various buttons from timeline into the d
 maintainer = "Splits285 <splits285@gmail.com>"
 type = "add-on"
 
-website = "https://blenderartists.org/t/keymesh/"
+website = "https://github.com/Splits285/TimelineButtonsInDopesheet"
 tags = ["Timeline", "Dopesheet", "GUI"]
 
 blender_version_min = "2.8.0"
