@@ -24,7 +24,7 @@ class CUSTOM_PT_slider_panel(bpy.types.Panel):
        ##Current frame slider
         row = layout.row()
         row.ui_units_x = 3.2
-        row.prop(context.scene, "frame_current", text="Current Frame")
+        row.prop(context.scene, "frame_current", text="")
         ##Auto keying toggle radio button, somehow toggles its icon to filled on its own
         row = layout.row()
         row.prop(context.scene.tool_settings, "use_keyframe_insert_auto", icon='RADIOBUT_OFF', icon_only=True)
