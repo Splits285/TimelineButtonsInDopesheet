@@ -1,4 +1,4 @@
-#Go use https://github.com/BlenderBoi/timeline-buttons instead. Archiving so I can make a separate addon to only add the framerate slider.
+# Go use https://github.com/BlenderBoi/timeline-buttons instead. Archiving so I can make a separate addon to only add the framerate slider.
 
 # TimelineButtonsInDopesheet
 Addon for blender which adds various buttons from timeline into the dopesheet on the right-hand side.
